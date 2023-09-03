@@ -1,0 +1,18 @@
+$TTL 2d ; Default TTL for zone
+$ORIGIN matthieu.rt.
+
+@   IN  SOA ns1.matthieu.rt.  matthieu.matthieu-dev.xyz. (
+    0   ; serial number
+    12h ; refresh
+    15m ; update retry
+    3w  ; expiry
+    2h  ; minimum
+    )
+
+    IN  NS  ns1.matthieu.rt.
+    IN  NS  ns2.matthieu.rt.
+
+ns1 IN  A       192.168.51.220
+ns2 IN  A       192.168.51.124
+
+www IN  A       192.168.51.129
